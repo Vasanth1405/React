@@ -1,0 +1,25 @@
+{
+    "trips" : [
+        {
+            "src": "trip1",
+            "header" : "Trip to the City",
+            "quote" : "Explore urban landscapes!",
+            "price" : "16,500",
+            "discount" : "33,000"
+        },
+        {
+            "src": "trip2",
+            "header" : "Trip to the Mountains",
+            "quote" : "Experience the breathtaking views!",
+            "price" : "9999",
+            "discount" : "15,000"
+        },
+        {
+            "src": "trip3",
+            "header" : "Trip to the Beach",
+            "quote" : "Feel the sand between your toes!",
+            "price" : "35,000",
+            "discount" : "43,000"
+        }
+    ]
+}

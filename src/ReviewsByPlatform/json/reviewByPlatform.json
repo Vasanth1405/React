@@ -1,0 +1,20 @@
+{
+    "reviews" : [
+        {
+            "src": "Trip Advisor",
+            "review" : "4.5/5"
+        },
+        {
+            "src": "Trust Pilot",
+            "review" : "4.0/5"
+        },
+        {
+            "src": "Google",
+            "review" : "4.0/5"
+        },
+        {
+            "src": "Reviews.io",
+            "review" : "4.3/5"
+        }
+    ]
+}

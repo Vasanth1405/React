@@ -1,0 +1,24 @@
+.MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-colorPrimary.MuiInputBase-formControl.MuiInputBase-sizeSmall.MuiInputBase-adornedStart.css-2a7nsh-MuiInputBase-root-MuiOutlinedInput-root {
+  border-radius: 40px !important;
+}
+
+.search-alert-dialog-slide {
+  padding-left: 30px;
+}
+.search-alert-dialog-slide .searchDialogHeader {
+  -webkit-margin-before: 0px !important;
+          margin-block-start: 0px !important;
+}
+.search-alert-dialog-slide .searchDivChip {
+  cursor: pointer;
+}
+.search-alert-dialog-slide .checkBoxDiv {
+  display: flex;
+  flex-direction: row;
+}
+.search-alert-dialog-slide .footerSearchDialogue {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}/*# sourceMappingURL=searchBox.css.map */
