@@ -9,7 +9,7 @@ import { TextField, InputAdornment, Checkbox } from "@mui/material";
 import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
 import Divider from "@mui/material/Divider";
-import RangeSlider from "./priceSlider";
+import RangeSlider from "./component/priceSlider";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="down" ref={ref} {...props} />;

@@ -1,0 +1,49 @@
+.CurrencyPicker_currencyModalListItems {
+  display: grid;
+  margin: 20px;
+  grid-template-columns: 25% 25% 25% 25%;
+  height: calc(85vh - 198px);
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  .CurrencyPicker_currencyModalListItem {
+    padding: 7px;
+    margin: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    position: relative;
+    font-size: 1rem !important;
+
+    .currency-modal-list-item-line-one {
+      .CurrencyPicker_currencyModalListItemFlag {
+        width: 30px;
+        height: 20px;
+        border: 1px solid #cbcbcb;
+        border-radius: 2px;
+        margin: 5px 10px 5px 0;
+      }
+
+      .CurrencyPicker_currencyModalListItemCode {
+        font-size: 15px;
+        font-weight: 500;
+        color: #515151;
+        line-height: 22.5px;
+      }
+    }
+
+    .currency-modal-list-item-line-two {
+      .CurrencyPicker_currencyModalListItemName {
+        font-size: 12px;
+        font-weight: 400;
+        color: #a2a2a2;
+        line-height: 18px;
+      }
+    }
+  }
+}
+
+.CurrencyPicker_currencyModalListItem:hover {
+  cursor: pointer;
+  border: 1px solid blue;
+}

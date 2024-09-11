@@ -1,0 +1,64 @@
+.auth-content {
+  display: flex;
+
+  .LoginModal_leftSection {
+    max-width: 55%;
+    flex-shrink: 0;
+    border-radius: 5px 0px 0px 5px;
+    overflow: hidden;
+
+    .LoginModal_authBanner {
+      min-width: 480px;
+      position: relative;
+      overflow: hidden;
+
+      img {
+        object-fit: cover;
+        height: clamp(516px, 36.9vw, 822px);
+      }
+
+      .LoginModal_bannerTextWrap {
+        width: 80%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        z-index: 1;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: rgb(255, 255, 255);
+
+            .LoginModal_bannerBoldText{
+                line-height: 1.2;
+                font-size: 3rem;
+                font-weight: 600;
+                letter-spacing: -2px;
+                margin-bottom: 15px;
+            }
+
+            span{
+                box-sizing: border-box !important;
+            }
+      }
+    }
+  }
+}
+
+.LoginModal_authBanner::before {
+  position: absolute;
+  content: "";
+  opacity: 0.75;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+    43deg,
+    rgb(0, 0, 0),
+    transparent 50%,
+    rgba(0, 0, 0, 0.7)
+  );
+  z-index: 0;
+}

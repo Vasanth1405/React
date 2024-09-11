@@ -2,6 +2,12 @@
   border-radius: 40px !important;
 }
 
+.floatLeftNav {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
 .search-alert-dialog-slide {
   padding-left: 30px;
 }

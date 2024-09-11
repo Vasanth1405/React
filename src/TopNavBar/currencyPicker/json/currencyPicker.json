@@ -1,0 +1,209 @@
+{
+	"INR": {
+		"symbol": "₹",
+		"name": "Indian Rupee",
+		"symbol_native": "টকা",
+		"decimal_digits": 2,
+		"label": "🇮🇳",
+		"code": "INR",
+		"name_plural": "Indian rupees"
+	},
+	"USD": {
+		"symbol": "$",
+		"name": "US Dollar",
+		"symbol_native": "$",
+		"decimal_digits": 2,
+		"label": "🇺🇸",
+		"code": "USD",
+		"name_plural": "US dollars"
+	},
+	"CAD": {
+		"symbol": "CA$",
+		"name": "Canadian Dollar",
+		"symbol_native": "$",
+		"decimal_digits": 2,
+		"label": "🇨🇦",
+		"code": "CAD",
+		"name_plural": "Canadian dollars"
+	},
+	"AED": {
+		"symbol": "AED",
+		"name": "UAE dirham",
+		"symbol_native": "د.إ.‏",
+		"decimal_digits": 2,
+		"label": "🇦🇪",
+		"code": "AED",
+		"name_plural": "UAE dirhams"
+	},
+	"BDT": {
+		"symbol": "Tk",
+		"name": "Bangladeshi Taka",
+		"symbol_native": "৳",
+		"decimal_digits": 2,
+		"label": "🇧🇩",
+		"code": "BDT",
+		"name_plural": "Bangladeshi takas"
+	},
+	"CNY": {
+		"symbol": "CN¥",
+		"name": "Chinese Yuan",
+		"symbol_native": "CN¥",
+		"decimal_digits": 2,
+		"label": "🇨🇳",
+		"code": "CNY",
+		"name_plural": "Chinese yuan"
+	},
+	"EGP": {
+		"symbol": "EGP",
+		"name": "Egyptian Pound",
+		"symbol_native": "ج.م.‏",
+		"decimal_digits": 2,
+		"label": "🇪🇬",
+		"code": "EGP",
+		"name_plural": "Egyptian pounds"
+	},
+	"GBP": {
+		"symbol": "£",
+		"name": "British Pound Sterling",
+		"symbol_native": "£",
+		"decimal_digits": 2,
+		"label": "🇬🇧",
+		"code": "GBP",
+		"name_plural": "British pounds sterling"
+	},
+	"HKD": {
+		"symbol": "HK$",
+		"name": "Hong Kong Dollar",
+		"symbol_native": "$",
+		"decimal_digits": 2,
+		"label": "🇭🇰",
+		"code": "HKD",
+		"name_plural": "Hong Kong dollars"
+	},
+	"IDR": {
+		"symbol": "Rp",
+		"name": "Indonesian Rupiah",
+		"symbol_native": "Rp",
+		"decimal_digits": 0,
+		"label": "🇮🇩",
+		"code": "IDR",
+		"name_plural": "Indonesian rupiahs"
+	},
+	"JPY": {
+		"symbol": "¥",
+		"name": "Japanese Yen",
+		"symbol_native": "￥",
+		"decimal_digits": 0,
+		"label": "🇯🇵",
+		"code": "JPY",
+		"name_plural": "Japanese yen"
+	},
+	"LKR": {
+		"symbol": "SLRs",
+		"name": "Sri Lankan Rupee",
+		"symbol_native": "SL Re",
+		"decimal_digits": 2,
+		"label": "🇱🇰",
+		"code": "LKR",
+		"name_plural": "Sri Lankan rupees"
+	},
+	"MYR": {
+		"symbol": "RM",
+		"name": "Malaysian Ringgit",
+		"symbol_native": "RM",
+		"decimal_digits": 2,
+		"label": "🇲🇾",
+		"code": "MYR",
+		"name_plural": "Malaysian ringgits"
+	},
+	"NPR": {
+		"symbol": "NPRs",
+		"name": "Nepalese Rupee",
+		"symbol_native": "नेरू",
+		"decimal_digits": 2,
+		"label": "🇳🇵",
+		"code": "NPR",
+		"name_plural": "Nepalese rupees"
+	},
+	"NZD": {
+		"symbol": "NZ$",
+		"name": "New Zealand Dollar",
+		"symbol_native": "$",
+		"decimal_digits": 2,
+		"label": "🇳🇿",
+		"code": "NZD",
+		"name_plural": "New Zealand dollars"
+	},
+	"PHP": {
+		"symbol": "₱",
+		"name": "Philippine Peso",
+		"symbol_native": "₱",
+		"decimal_digits": 2,
+		"label": "🇵🇭",
+		"code": "PHP",
+		"name_plural": "Philippine pesos"
+	},
+	"RSD": {
+		"symbol": "din",
+		"name": "Serbian Dinar",
+		"symbol_native": "дин.",
+		"decimal_digits": 0,
+		"label": "🇷🇸",
+		"code": "RSD",
+		"name_plural": "Serbian dinars"
+	},
+	"RUB": {
+		"symbol": "RUB",
+		"name": "Russian Ruble",
+		"symbol_native": "₽.",
+		"decimal_digits": 2,
+		"label": "🇷🇸",
+		"code": "RUB",
+		"name_plural": "Russian rubles"
+	},
+	"SAR": {
+		"symbol": "SR",
+		"name": "Saudi Riyal",
+		"symbol_native": "ر.س.‏",
+		"decimal_digits": 2,
+		"label": "🇸🇦",
+		"code": "SAR",
+		"name_plural": "Saudi riyals"
+	},
+	"SGD": {
+		"symbol": "S$",
+		"name": "Singapore Dollar",
+		"symbol_native": "$",
+		"decimal_digits": 2,
+		"label": "🇸🇬",
+		"code": "SGD",
+		"name_plural": "Singapore dollars"
+	},
+	"THB": {
+		"symbol": "฿",
+		"name": "Thai Baht",
+		"symbol_native": "฿",
+		"decimal_digits": 2,
+		"label": "🇹🇭",
+		"code": "THB",
+		"name_plural": "Thai baht"
+	},
+	"VND": {
+		"symbol": "₫",
+		"name": "Vietnamese Dong",
+		"symbol_native": "₫",
+		"decimal_digits": 0,
+		"label": "🇻🇳",
+		"code": "VND",
+		"name_plural": "Vietnamese dong"
+	},	
+	"ZAR": {
+		"symbol": "R",
+		"name": "South African Rand",
+		"symbol_native": "R",
+		"decimal_digits": 2,
+		"label": "🇿🇦",
+		"code": "ZAR",
+		"name_plural": "South African rand"
+	}
+}
