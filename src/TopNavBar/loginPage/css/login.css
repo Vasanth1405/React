@@ -15,7 +15,7 @@
 .auth-content .LoginModal_leftSection .LoginModal_authBanner img {
   -o-object-fit: cover;
      object-fit: cover;
-  height: clamp(516px, 36.9vw, 822px);
+  height: clamp(555px, 40vw, 746px);
 }
 .auth-content .LoginModal_leftSection .LoginModal_authBanner .LoginModal_bannerTextWrap {
   width: 80%;
@@ -40,6 +40,75 @@
 .auth-content .LoginModal_leftSection .LoginModal_authBanner .LoginModal_bannerTextWrap span {
   box-sizing: border-box !important;
 }
+.auth-content .LoginModal_rightSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+}
+.auth-content .LoginModal_rightSection .newLoginPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 25vw;
+}
+.auth-content .LoginModal_rightSection .newLoginPage .inputFieldDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 25vw;
+}
+.auth-content .LoginModal_rightSection .newLoginPage .inputFieldDiv .react-tel-input .form-control {
+  height: 40px !important;
+  width: 100% !important;
+}
+.auth-content .LoginModal_rightSection .newLoginPage .inputFieldDiv .loginModal_auth_text {
+  font-size: 12px;
+  font-weight: 400;
+  color: #5f5f5f;
+}
+.auth-content .LoginModal_rightSection .newLoginPage .loginModal_auth {
+  font-size: 12px;
+  font-weight: 400;
+  color: #5f5f5f;
+  margin-top: 10px;
+}
+.auth-content .LoginModal_rightSection .newLoginPage .loginModal_auth b {
+  font-weight: bold;
+  color: #515151;
+  cursor: pointer;
+}
+.auth-content .LoginModal_rightSection .newLoginPage .LoginModal_authDescription {
+  margin-left: auto;
+  padding-top: 10px;
+}
+.auth-content .LoginModal_rightSection .newLoginPage .LoginModal_authDescription .LoginModal_active {
+  color: blue;
+  cursor: pointer;
+  font-weight: 500;
+}
+.auth-content .LoginModal_rightSection .newLoginPage .googleLogin {
+  margin-top: 0.5rem;
+  margin-left: 4rem;
+}
+.auth-content .LoginModal_rightSection .newLoginPage .googleLogin div {
+  height: 40px !important;
+  width: 200px !important;
+  line-height: 40px !important;
+}
+.auth-content .LoginModal_rightSection .newLoginPage .googleLogin div div {
+  width: 25px !important;
+  height: 42px !important;
+  margin-top: -3px !important;
+  margin-left: -1px !important;
+}
+.auth-content .LoginModal_rightSection .newLoginPage .ratingDivider div::before {
+  width: 6vw;
+}
+.auth-content .LoginModal_rightSection .newLoginPage .ratingDivider div::after {
+  width: 6vw;
+}
 
 .LoginModal_authBanner::before {
   position: absolute;
@@ -51,4 +120,11 @@
   width: 100%;
   background-image: linear-gradient(43deg, rgb(0, 0, 0), transparent 50%, rgba(0, 0, 0, 0.7));
   z-index: 0;
+}
+
+.MuiDivider-root::before,
+.MuiDivider-root::after {
+  width: 6vw;
+  border-top: thin solid rgba(0, 0, 0, 0.12);
+  border-top-style: inherit;
 }/*# sourceMappingURL=login.css.map */

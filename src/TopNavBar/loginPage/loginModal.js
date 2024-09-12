@@ -38,6 +38,7 @@ const LoginPage = () => {
             '& .MuiDialog-paper': {
               width: '60%', 
               maxWidth: '1200px', 
+              maxHeight: "calc(100% - 25px)"
             }
           }}
       >

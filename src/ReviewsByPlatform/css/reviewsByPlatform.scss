@@ -1,4 +1,4 @@
-.TrustFactorBlock_tabBody {
+.TrustFactorBlock_flexBody {
   width: 100%;
   background: rgb(0, 0, 0);
   background: linear-gradient(
@@ -10,7 +10,7 @@
   color: #fff;
   margin-bottom: 50px;
 
-  .TrustFactorBlock_tabContainer {
+  .TrustFactorBlock_flexContainer {
     display: flex;
     justify-content: space-around;
     padding: 50px;
@@ -53,6 +53,61 @@
           font-size: 10px;
           line-height: 15px;
           color: #fff;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+  .TrustFactorBlock_gridBody {
+    width: 100%;
+    background: rgb(255, 255, 255);
+    margin-top: 10px;
+
+  .TrustFactorBlock_gridContainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 10px 0 0 25px;
+    row-gap: 10px;
+
+    .TrustFactorBlock_tabItem {
+      display: flex;
+      gap: 10px;
+
+      .TrustFactorBlock_leftSection {
+        flex-shrink: 0;
+        min-width: 25px;
+        aspect-ratio: 1;
+
+        .TrustFactorBlock_tabIcon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 90%;
+          height: 100%;
+          border-radius: 100%;
+        }
+      }
+
+      .TrustFactorBlock_rightSection {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+
+        .TrustFactorBlock_tabDescription {
+          display: flex;
+          align-items: center;
+          line-height: 20px;
+          font-size: 12px;
+          color: rgb(0, 0, 0);
+          font-weight: 500;
+        }
+
+        .TrustFactorBlock_tabTitle {
+          font-size: 10px;
+          line-height: 15px;
+          color: rgb(0, 0, 0);
           text-transform: uppercase;
         }
       }

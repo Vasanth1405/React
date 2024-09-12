@@ -1,25 +1,25 @@
-.TrustFactorBlock_tabBody {
+.TrustFactorBlock_flexBody {
   width: 100%;
   background: rgb(0, 0, 0);
   background: linear-gradient(0deg, rgb(0, 0, 0) 89%, rgb(93, 84, 84) 100%, rgb(9, 9, 121) 100%);
   color: #fff;
   margin-bottom: 50px;
 }
-.TrustFactorBlock_tabBody .TrustFactorBlock_tabContainer {
+.TrustFactorBlock_flexBody .TrustFactorBlock_flexContainer {
   display: flex;
   justify-content: space-around;
   padding: 50px;
 }
-.TrustFactorBlock_tabBody .TrustFactorBlock_tabContainer .TrustFactorBlock_tabItem {
+.TrustFactorBlock_flexBody .TrustFactorBlock_flexContainer .TrustFactorBlock_tabItem {
   display: flex;
   gap: 10px;
 }
-.TrustFactorBlock_tabBody .TrustFactorBlock_tabContainer .TrustFactorBlock_tabItem .TrustFactorBlock_leftSection {
+.TrustFactorBlock_flexBody .TrustFactorBlock_flexContainer .TrustFactorBlock_tabItem .TrustFactorBlock_leftSection {
   flex-shrink: 0;
   min-width: 44px;
   aspect-ratio: 1;
 }
-.TrustFactorBlock_tabBody .TrustFactorBlock_tabContainer .TrustFactorBlock_tabItem .TrustFactorBlock_leftSection .TrustFactorBlock_tabIcon {
+.TrustFactorBlock_flexBody .TrustFactorBlock_flexContainer .TrustFactorBlock_tabItem .TrustFactorBlock_leftSection .TrustFactorBlock_tabIcon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,12 +28,12 @@
   border-radius: 100%;
   background: #292929;
 }
-.TrustFactorBlock_tabBody .TrustFactorBlock_tabContainer .TrustFactorBlock_tabItem .TrustFactorBlock_rightSection {
+.TrustFactorBlock_flexBody .TrustFactorBlock_flexContainer .TrustFactorBlock_tabItem .TrustFactorBlock_rightSection {
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
 }
-.TrustFactorBlock_tabBody .TrustFactorBlock_tabContainer .TrustFactorBlock_tabItem .TrustFactorBlock_rightSection .TrustFactorBlock_tabDescription {
+.TrustFactorBlock_flexBody .TrustFactorBlock_flexContainer .TrustFactorBlock_tabItem .TrustFactorBlock_rightSection .TrustFactorBlock_tabDescription {
   display: flex;
   align-items: center;
   line-height: 27px;
@@ -41,9 +41,57 @@
   color: #fff;
   font-weight: 500;
 }
-.TrustFactorBlock_tabBody .TrustFactorBlock_tabContainer .TrustFactorBlock_tabItem .TrustFactorBlock_rightSection .TrustFactorBlock_tabTitle {
+.TrustFactorBlock_flexBody .TrustFactorBlock_flexContainer .TrustFactorBlock_tabItem .TrustFactorBlock_rightSection .TrustFactorBlock_tabTitle {
   font-size: 10px;
   line-height: 15px;
   color: #fff;
+  text-transform: uppercase;
+}
+
+.TrustFactorBlock_gridBody {
+  width: 100%;
+  background: rgb(255, 255, 255);
+  margin-top: 10px;
+}
+.TrustFactorBlock_gridBody .TrustFactorBlock_gridContainer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 10px 0 0 25px;
+  row-gap: 10px;
+}
+.TrustFactorBlock_gridBody .TrustFactorBlock_gridContainer .TrustFactorBlock_tabItem {
+  display: flex;
+  gap: 10px;
+}
+.TrustFactorBlock_gridBody .TrustFactorBlock_gridContainer .TrustFactorBlock_tabItem .TrustFactorBlock_leftSection {
+  flex-shrink: 0;
+  min-width: 25px;
+  aspect-ratio: 1;
+}
+.TrustFactorBlock_gridBody .TrustFactorBlock_gridContainer .TrustFactorBlock_tabItem .TrustFactorBlock_leftSection .TrustFactorBlock_tabIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 100%;
+  border-radius: 100%;
+}
+.TrustFactorBlock_gridBody .TrustFactorBlock_gridContainer .TrustFactorBlock_tabItem .TrustFactorBlock_rightSection {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.TrustFactorBlock_gridBody .TrustFactorBlock_gridContainer .TrustFactorBlock_tabItem .TrustFactorBlock_rightSection .TrustFactorBlock_tabDescription {
+  display: flex;
+  align-items: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+.TrustFactorBlock_gridBody .TrustFactorBlock_gridContainer .TrustFactorBlock_tabItem .TrustFactorBlock_rightSection .TrustFactorBlock_tabTitle {
+  font-size: 10px;
+  line-height: 15px;
+  color: rgb(0, 0, 0);
   text-transform: uppercase;
 }/*# sourceMappingURL=reviewsByPlatform.css.map */

@@ -14,7 +14,7 @@
 
       img {
         object-fit: cover;
-        height: clamp(516px, 36.9vw, 822px);
+        height: clamp(555px, 40vw, 746px);
       }
 
       .LoginModal_bannerTextWrap {
@@ -30,17 +30,101 @@
         transform: translateX(-50%);
         color: rgb(255, 255, 255);
 
-            .LoginModal_bannerBoldText{
-                line-height: 1.2;
-                font-size: 3rem;
-                font-weight: 600;
-                letter-spacing: -2px;
-                margin-bottom: 15px;
-            }
+        .LoginModal_bannerBoldText {
+          line-height: 1.2;
+          font-size: 3rem;
+          font-weight: 600;
+          letter-spacing: -2px;
+          margin-bottom: 15px;
+        }
 
-            span{
-                box-sizing: border-box !important;
-            }
+        span {
+          box-sizing: border-box !important;
+        }
+      }
+    }
+  }
+
+  .LoginModal_rightSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+
+    .newLoginPage {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+      width: 25vw;
+
+      .inputFieldDiv {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 25vw;
+
+        .react-tel-input .form-control {
+          height: 40px !important;
+          width: 100% !important;
+        }
+
+        .loginModal_auth_text {
+          font-size: 12px;
+          font-weight: 400;
+          color: #5f5f5f;
+        }
+      }
+
+      .loginModal_auth{
+        font-size: 12px;
+        font-weight: 400;
+        color: #5f5f5f;
+        margin-top: 10px;
+
+          b{
+            font-weight: bold;
+            color: #515151;
+            cursor: pointer;
+          }
+      }
+
+      .LoginModal_authDescription {
+        margin-left: auto;
+        padding-top: 10px;
+
+        .LoginModal_active {
+          color: blue;
+          cursor: pointer;
+          font-weight: 500;
+        }
+      }
+
+      .googleLogin {
+        margin-top: 0.5rem;
+        margin-left: 4rem;
+
+        div {
+          height: 40px !important;
+          width: 200px !important;
+          line-height: 40px !important;
+
+          div {
+            width: 25px !important;
+            height: 42px !important;
+            margin-top: -3px !important;
+            margin-left: -1px !important;
+          }
+        }
+      }
+
+      .ratingDivider {
+        div::before {
+          width: 6vw;
+        }
+        div::after {
+          width: 6vw;
+        }
       }
     }
   }
@@ -61,4 +145,11 @@
     rgba(0, 0, 0, 0.7)
   );
   z-index: 0;
+}
+
+.MuiDivider-root::before,
+.MuiDivider-root::after {
+  width: 6vw;
+  border-top: thin solid rgba(0, 0, 0, 0.12);
+  border-top-style: inherit;
 }

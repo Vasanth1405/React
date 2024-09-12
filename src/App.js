@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <NavBarView></NavBarView>
       <CarouselView></CarouselView>
-      <ReviewsByPlatform></ReviewsByPlatform>
+      <ReviewsByPlatform display={"flex"}></ReviewsByPlatform>
     </div>
   );
 }

@@ -7,7 +7,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import Button from "@mui/material/Button";
 import { TextField, InputAdornment, Checkbox } from "@mui/material";
 import Chip from "@mui/material/Chip";
-import Stack from "@mui/material/Stack";
+import Stack from "@mui/material/Stack";  
 import Divider from "@mui/material/Divider";
 import RangeSlider from "./component/priceSlider";
 
