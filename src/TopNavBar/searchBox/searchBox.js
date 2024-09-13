@@ -5,8 +5,11 @@ import "./css/searchBox.css"
 import SearchFieldDialogue from "./searchBoxDialogue";
 
 const SearchField = () => {
-  const placeholders = ["Thailand", "Dubai", "India", "NewYork"];
+  const placeholders = ["Thailand", "Dubai", "India", "New York"];
+  const [typedText, setTypedText] = useState("");
   const [placeholderIndex, setPlaceholderIndex] = useState(0);
+  const [isTyping, setIsTyping] = useState(true); 
+  const [charIndex, setCharIndex] = useState(0);
   const [open, setOpen] = useState(false);
 
   const handleClickOpen = () => {
@@ -18,12 +21,33 @@ const SearchField = () => {
   }
 
   useEffect(() => {
-    const intervalId = setInterval(() => {
-      setPlaceholderIndex((prevIndex) => (prevIndex + 1) % placeholders.length);
-    }, 2000);
+    const currentPlaceholder = placeholders[placeholderIndex];
+    let typingSpeed = 100;
+    let timeout;
 
-    return () => clearInterval(intervalId);
-  }, [placeholders.length]);
+    if(isTyping){
+      if(charIndex < currentPlaceholder.length){
+        timeout = setTimeout(() => {
+          setTypedText((prev) => prev + currentPlaceholder[charIndex]);
+          setCharIndex((prevIndex) => prevIndex + 1);
+        }, typingSpeed)
+      } else{
+        timeout = setTimeout(() => setIsTyping(false), 1000)
+      }
+    } else{
+      if(charIndex > 0){
+        timeout = setTimeout(() => {
+          setTypedText((prev) => prev.slice(0, -1));
+          setCharIndex((prevIndex) => prevIndex - 1);
+        }, typingSpeed)
+      } else{
+        setIsTyping(true);
+        setPlaceholderIndex((prevIndex) => (prevIndex + 1) % placeholders.length)
+      }
+    }
+
+    return () => clearTimeout(timeout)
+  }, [charIndex, isTyping, placeholders, placeholderIndex])
 
   return (
     <>
@@ -31,7 +55,7 @@ const SearchField = () => {
       <TextField
         onClick={handleClickOpen}
         variant="outlined"
-        placeholder={`Search for ${placeholders[placeholderIndex]}`}
+        placeholder={`Search for ${typedText}`}
         size="small"
         sx={{ backgroundColor: "white", borderRadius: "40px" }}
         InputProps={{
@@ -44,7 +68,7 @@ const SearchField = () => {
       />
     </Box>
     <SearchFieldDialogue open={open} handleClickOpen={handleClickOpen} handleClose={handleClose} 
-    placeholders={placeholders} placeholderIndex={placeholderIndex}></SearchFieldDialogue>
+    placeholders={placeholders} placeholderIndex={placeholderIndex} typedText={typedText}></SearchFieldDialogue>
     </>
   );
 };
