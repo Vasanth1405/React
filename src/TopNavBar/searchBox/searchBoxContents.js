@@ -1,20 +1,49 @@
+import React from "react";
 import Stack from "@mui/material/Stack";  
 import Divider from "@mui/material/Divider";
 import RangeSlider from "./component/priceSlider";
 import Button from "@mui/material/Button";
 import Chip from "@mui/material/Chip";
 import { Checkbox } from "@mui/material";
+import { useState } from "react";
 
 const SearchBoxContent = () => {
     const productType = ["Tour" ,"Activity"];
     const tripDuration = ["Upto 1 Day","2 to 3 days", "3 to 5 days", "5 to 7 days", "7+ days"];
 
+    const [selectedProductTypes, setSelectedProductTypes] = useState([]);
+    const [selectedTripDuration, setSelectedTripDuration] = useState(null);
+
+    const handleProductTypeClick = (product) => {
+      if (selectedProductTypes.includes(product)) {
+        setSelectedProductTypes(
+          selectedProductTypes.filter((item) => item !== product)
+        );
+      } else {
+        setSelectedProductTypes([...selectedProductTypes, product]);
+      }
+    };
+
+    const handleTripDurationClick = (product) => {
+      setSelectedTripDuration(product);
+    };
+
+    const handleClearAll = () => {
+      setSelectedProductTypes([]); 
+      setSelectedTripDuration(null); 
+    };
+
     const productTypeDiv = productType.map((product, index) => (
-      <Chip className="searchDivChip" key={index} label={product} />
+      <Chip className={selectedProductTypes.includes(product) ? "productSelected" : ""} 
+      onClick={() => handleProductTypeClick(product)} 
+      key={index} label={product} 
+      />
     ));
   
     const tripDurationDiv = tripDuration.map((product, index) => (
-      <Chip className="searchDivChip" key={index} label={product} />
+      <Chip className={ selectedTripDuration === product ? "tripDurationSelected" : ""}  
+      onClick={() => handleTripDurationClick(product)}
+      key={index} label={product} />
     ));
 
     const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
@@ -40,7 +69,7 @@ const SearchBoxContent = () => {
       </div>
       <Divider sx={{ marginTop: "1px" }}></Divider>
       <div className="footerSearchDialogue">
-        <p style={{textDecoration: "underline"}}>Clear All</p>  
+        <p style={{textDecoration: "underline", cursor:"pointer"}} onClick={handleClearAll}>Clear All</p>  
         <Button variant="contained" size="small" sx={{borderRadius: "10px", margin: "15px 10px"}}>Search For Products</Button>
       </div>
     </div>

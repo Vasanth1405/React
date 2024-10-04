@@ -14,8 +14,16 @@
     margin-block-start: 0px !important;
   }
 
-  .searchDivChip {
+  .productSelected {
     cursor: pointer;
+    color: white;
+    background-color: blue;
+  }
+
+  .tripDurationSelected{
+    cursor: pointer;
+    color: white;
+    background-color: blue;
   }
 
   .checkBoxDiv {

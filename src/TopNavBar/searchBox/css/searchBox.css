@@ -15,8 +15,15 @@
   -webkit-margin-before: 0px !important;
           margin-block-start: 0px !important;
 }
-.search-alert-dialog-slide .searchDivChip {
+.search-alert-dialog-slide .productSelected {
   cursor: pointer;
+  color: white;
+  background-color: blue;
+}
+.search-alert-dialog-slide .tripDurationSelected {
+  cursor: pointer;
+  color: white;
+  background-color: blue;
 }
 .search-alert-dialog-slide .checkBoxDiv {
   display: flex;

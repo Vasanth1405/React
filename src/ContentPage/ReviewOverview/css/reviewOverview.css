@@ -1,0 +1,20 @@
+.container {
+  margin: 2rem auto;
+  width: 85vw;
+}
+.container .dividerDiv {
+  color: #515151;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 39px;
+}
+.container .dividerDiv .dividerSpan {
+  color: var(--primary-color, #f37002);
+  font-weight: 600;
+  margin-right: 4px;
+}
+.container .reviewStripCardContainer {
+  display: flex;
+  margin-bottom: 60px;
+  margin-top: 30px;
+}/*# sourceMappingURL=reviewOverview.css.map */

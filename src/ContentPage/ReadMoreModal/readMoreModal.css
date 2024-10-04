@@ -1,0 +1,12 @@
+.readMoreDiv {
+  padding: 15px;
+  background: #d1d1d1;
+  border-radius: 7px;
+  color: #515151;
+  width: 85vw;
+  margin: 0 auto;
+}
+.readMoreDiv h3 {
+  -webkit-margin-before: 0.5rem;
+          margin-block-start: 0.5rem;
+}/*# sourceMappingURL=readMoreModal.css.map */
